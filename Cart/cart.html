@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 50px;
+    }
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        font-size: 50px;
+    }
+    button:hover {
+        background-color: #f0f0f0;
+    }
+    #Submit {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="btn1">
+            <button onclick="Milk('Milk', 55)">₹55 Milk</button>
+            <div>
+                <button onclick="MilkDec()">-</button>
+                <span id="lable1">0</span>
+                <button onclick="Milk('Milk', 55)">+</button>
+            </div>
+        </div>
+
+        <div class="btn1">
+          <button onclick="Curd('Curd', 35)">₹35 Curd</button>
+          <div>
+              <button onclick="CurdDec()">-</button>
+              <span id="lable2">0</span>
+              <button onclick="Curd('Curd', 35)">+</button>
+          </div>
+      </div>
+
+      <div class="btn1">
+          <button onclick="Paneer('Paneer', 85)">₹85 Paneer</button>
+          <div>
+              <button onclick="PaneerDec()">-</button>
+              <span id="lable3">0</span>
+              <button onclick="Paneer('Paneer', 85)">+</button>
+          </div>
+      </div>
+      
+      <div class="btn1">
+        <button onclick="Egg('Egg', 30)">₹30 Egg</button>
+        <div>
+          <button onclick="EggDec()">-</button>
+          <span id="lable4">0</span>
+          <button onclick="Egg('Egg', 30)">+</button>
+        </div>
+      </div>
+
+      <div class="btn1">
+          <button onclick="Bread('Bread', 40)">₹40 Bread</button>
+          <div>
+              <button onclick="BreadDec()">-</button>
+              <span id="lable5">0</span>
+              <button onclick="Bread('Bread', 40)">+</button>
+          </div>
+      </div>
+    </div>
+
+    <div id="Submit">
+        <button onclick="totalItems()">Submit</button>
+    </div>
+
+    <div id="cartItem">Total No. of Items: <span id="totalItem"></span></div>
+    <div id="cartTotal">Total Cost: <span id="totalPrize"></span></div>
+
+    <script src="AutomationCart.js"></script>
+</body>
+</html>

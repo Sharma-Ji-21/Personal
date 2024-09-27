@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body {
@@ -29,8 +30,18 @@
         display: flex;
         justify-content: center;
     }
+    .purses {
+        
+        margin-left:78%;
+    }
+    #walletBalance {
+        display: flexbox;
+    }
 </style>
 <body>
+    <div class="purses">
+        <p id="purse"></p>
+    </div>
     <div class="main">
         <div class="btn1">
             <button onclick="Milk('Milk', 55)">₹55 Milk</button>
@@ -79,11 +90,12 @@
     </div>
 
     <div id="Submit">
-        <button onclick="totalItems()">Submit</button>
+        <button onclick="totalItems(),checkBalance()">Submit</button>
     </div>
 
     <div id="cartItem">Total No. of Items: <span id="totalItem"></span></div>
     <div id="cartTotal">Total Cost: <span id="totalPrize"></span></div>
+    <div id="walletBalance"><span id="walletAmount"></span></div>
 
     <script src="AutomationCart.js"></script>
 </body>

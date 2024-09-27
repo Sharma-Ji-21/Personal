@@ -1,4 +1,6 @@
 let Milkcart=[];
+let purse =1000;
+document.getElementById("purse").innerText=`Balance: ₹${purse}`;
 function Milk(itemName1,itemPrice1){
     Milkcart.push({Name : itemName1, Price : itemPrice1});
     updateMilkCounter();
@@ -83,12 +85,14 @@ function updateBreadCounter(){
     let counterBread=Breadcart.length;
     document.getElementById("lable5").innerText=counterBread;
 }
+
 function totalItems() {
     let cart = [...Milkcart, ...Eggcart, ...Paneercart, ...Breadcart, ...Curdcart];
     let totalPrice = 0;
     for (let i = 0; i < cart.length; i++) {
         totalPrice += cart[i].Price;
     }
+    amountLeft = purse - totalPrice;
     let totalItem = cart.length;
     document.getElementById('totalItem').textContent = totalItem;
     document.getElementById('totalPrize').textContent = `₹${totalPrice}`;
@@ -103,4 +107,15 @@ function totalItems() {
     document.getElementById("lable3").innerText = 0;
     document.getElementById("lable4").innerText = 0;
     document.getElementById("lable5").innerText = 0;
+}
+    
+function checkBalance() {
+    if (amountLeft >= 0) {
+        // document.getElementById('walletAmount').textContent = `₹${amountLeft}`;
+        document.getElementById('purse').textContent = `Balance: ₹${amountLeft}`;
+    } else {
+        // document.getElementById('walletAmount').textContent = "Insufficient Balance";
+        document.getElementById('purse').textContent = "Insufficient Balance"
+        alert("Insufficient Balance");
+    }
 }

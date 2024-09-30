@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Splitter</title>
+</head>
+<body>
+    <h1>Money Splitter</h1>
+    <label for="item">Item Name-></label>
+    <input type="text" id='item'>
+    <br>
+    <label for="cost">Amount-></label>
+    <input type="number" id='cost'>
+    <br>
+    <label for="personNumber">Number of Person-></label>
+    <input type="number" id='personNumber'>
+    <br>
+    <button onclick="addItem()">Add Item</button>
+    <table id="item-table" border="1">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Total Amount</th>
+                <th>No. of Persons</th>
+                <th>Split Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div id='item-list'></div>
+    <br>
+    <span id='totalCost'></span>
+    <script src="splitter.js"></script>
+</body>
+
+</html>

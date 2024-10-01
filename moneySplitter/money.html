@@ -3,38 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Splitter</title>
+    <title>💸 Money Splitter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Money Splitter</h1>
-    <label for="item">Item Name-></label>
-    <input type="text" id='item'>
+    <h1>💰 Money Splitter</h1>
+
+    <div class="input-group">
+        <label for="item">📦 Item Name:</label><br>
+        <input type="text" id="item" placeholder="Enter Item Name">
+    </div>
+
+    <div class="input-group">
+        <label for="cost">💵 Amount:</label><br>
+        <input type="number" id="cost" placeholder="Enter Amount">
+    </div>
+
+    <div class="input-group">
+        <label for="names">👥 Enter all names (separated by commas):</label><br>
+        <input type="text" id="names" placeholder="Enter names"><br>
+        <button onclick="submitNames()">Submit Names</button>
+    </div>
+
+    <div id="checkboxContainer" class="checkbox-container">
+    </div>
+        <br>
+
+    <button class="add-item-btn" onclick="addItem()">➕ Add Item</button>
     <br>
-    <label for="cost">Amount-></label>
-    <input type="number" id='cost'>
-    <br>
-    <label for="personNumber">Number of Person-></label>
-    <input type="number" id='personNumber'>
-    <br>
-    <button onclick="addItem()">Add Item</button>
-    <table id="item-table" border="1">
+
+    <table id="itemTable">
         <thead>
             <tr>
                 <th>Item</th>
                 <th>Total Amount</th>
                 <th>No. of Persons</th>
                 <th>Split Amount</th>
+                <th>Person Names</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Button to submit and generate the final table -->
+    <button class="calculate-btn" onclick="calculateTotals()">📊 Calculate Final Amounts</button>
+    <br>
+
+    <!-- Table showing the amount each person owes -->
+    <h2>💵 Amounts Each Person Owes:</h2>
+    <table id="finalTable">
+        <thead>
+            <tr>
+                <th>Person</th>
+                <th>Total Amount to Pay</th>
             </tr>
         </thead>
         <tbody>
-
         </tbody>
     </table>
-
-    <div id='item-list'></div>
-    <br>
-    <span id='totalCost'></span>
+    Made By Om & Yug
+    
     <script src="splitter.js"></script>
 </body>
-
 </html>

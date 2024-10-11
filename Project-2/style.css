@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #94AFA3;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    display: none;
+}
+
+.calculator {
+    background-color: #2e5a51;
+    border-radius: 20px;
+    padding: 30px;
+    width: 420px;
+}
+
+#display {
+    width: 100%;
+    background-color: #BCC1BD;
+    color: #000;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+/* Style for number buttons */
+button:not(.operator, #clear, #erase) {
+    background-color: #E8E7EC;
+    color: black;
+}
+
+/* Style for operator buttons */
+button.operator {
+    background-color: #4d8478;
+    color: white;
+}
+
+/* Style for AC and erase buttons */
+#clear, #erase {
+    background-color: #414745;
+    color: white;
+}
+
+#erase img {
+    vertical-align: middle;
+}
+
+/* Special style for the equals button */
+#equals {
+    background-color: #000000;
+    color: #4ecaad;
+    height: 150px;
+}
+
+#zero {
+    width: 150px;
+    height: 70px;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.Push {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.Last{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}

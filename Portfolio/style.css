@@ -1,0 +1,113 @@
+body {
+    background-image: url('https://imgs.search.brave.com/b125XPj0IJ95T1gKRAHX5zA7hGyi7dJ96p0VKcYyGGY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/dHdvLXRvbmUtaW5r/LWNsb3VkLmpwZz93/aWR0aD0xMDAwJmZv/cm1hdD1wanBnJmV4/aWY9MCZpcHRjPTA');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+#Helo {
+    width: 80%;
+    opacity: 0.5;
+}
+h1 {
+    font-size: 8em;
+    &:hover {
+        font-size: 9em;
+        transition: font-size 0.3s;
+        cursor: pointer;
+    }
+}
+#welcome {
+    font-size: 2em;
+}
+#links1 {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        font-size: 3.5em;
+        color: red;
+    }
+}
+#links3 {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        font-size: 3.5em;
+        color: red;
+    }
+}
+#links2 {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        font-size: 3.5em;
+        color: red;
+    }
+}
+#About {
+    margin-top: 50px;
+    padding: 20px;
+}
+h2 {
+    font-size: 2em;
+    &:hover {
+        font-size: 2.1em;
+        transition: font-size 0.3s;
+        cursor: pointer;
+    }
+}
+#Pic {
+    width: 130px;
+    height: auto;
+    border-radius: 100%;
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+}
+#Para {
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.9em;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr:hover {
+    background-color: #f2f2f2;
+    color: black;
+    transition: background-color 0.3s;
+}
+a {
+    text-decoration: none;
+    color: red;
+    &:hover {
+        font-size: 2em;
+    }
+}
+ul li {
+display: inline;
+margin-right: 30px;
+&:hover{
+    font-size: large;
+    transition: font-size 0.3s ease;
+}
+}

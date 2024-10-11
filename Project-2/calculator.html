@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="calculator-buttons">
+            <button id="clear" onclick="clearInput()">AC</button>
+            <button id="erase" onclick="erase()"><img src="https://pic.onlinewebfonts.com/thumbnails/icons_152095.svg" width="20px" height="12px"></button>
+            <button class="operator" onclick="divide()">÷</button>
+            <button class="operator" onclick="multiply()">x</button>
+
+            <button onclick="pushvalue(7)">7</button>
+            <button onclick="pushvalue(8)">8</button>
+            <button onclick="pushvalue(9)">9</button>
+            <button class="operator" onclick="subtract()">-</button>
+            
+            <button onclick="pushvalue(4)">4</button>
+            <button onclick="pushvalue(5)">5</button>
+            <button onclick="pushvalue(6)">6</button>
+            <button class="operator" onclick="add()">+</button>
+        </div>
+            <div class="Push">
+            <button onclick="pushvalue(1)">1</button>
+            <button onclick="pushvalue(2)">2</button>
+            <button onclick="pushvalue(3)">3</button>
+            <button id="equals" onclick="calculate()">=</button>
+        </div>
+        <div class="Last">
+            <button id="zero" onclick="pushvalue(0)">0</button>
+            <button onclick="decimal()">.</button>
+        </div>
+    </div>
+    
+    <script src="hlo.js"></script>
+</body>
+</html>

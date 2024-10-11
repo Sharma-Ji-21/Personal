@@ -4,24 +4,25 @@ setTimeout(() => {
     let newName = name.toLowerCase();
     
     if (newName === '') {
-        console.log("Name can't be empty");
+        console.log("❌ Name can't be empty");
         return false;
     } else {
-        console.log(`Welcome ${name} to the Game Of Cards`);
+        console.log(`🎉 Welcome ${name} to the Game Of Cards 🃏`);
     }
 
-    let suits = ['Clubs', 'Diamonds', 'Spades', 'Hearts'];
-    let ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let suits = ['♣️ Clubs', '♦️ Diamonds', '♠️ Spades', '♥️ Hearts'];
+    let ranks = ['🅰️', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟', '🃏J', '👸Q', '🤴K'];
     let deck = [];
 
     for (let suit of suits) {
         for (let rank of ranks) {
-            deck.push(`${rank} of ${suit}`);
+            deck.push(`${rank}  of ${suit}`);
         }
     }
 
     let playerHand = [];
     let computerHand = [];
+    let cardRound=5;
 
     const dealCards = (hand, count) => {
         for (let i = 0; i < count; i++) {
@@ -31,25 +32,25 @@ setTimeout(() => {
         }
     };
 
-    dealCards(playerHand, 5);
-    dealCards(computerHand, 5);
+    dealCards(playerHand, cardRound);
+    dealCards(computerHand, cardRound);
 
-    console.log("Here are your cards:");
+    console.log("🃏 Here are your cards:\n");
     console.log(playerHand);
 
     let getCardValue=(card)=>{
         let cardValue=card.split(" ")[0];
         let value;
-        if(cardValue==='A'){
+        if(cardValue==='🅰️'){
             value= 14;
         }
-        else if(cardValue==='J'){
+        else if(cardValue==='🃏'){
             value= 11;
         }
-        else if(cardValue==='Q'){
+        else if(cardValue==='👸'){
             value= 12;
         }
-        else if(cardValue==='K'){
+        else if(cardValue==='🤴'){
             value= 13;
         }
         else{
@@ -67,22 +68,31 @@ setTimeout(() => {
         if (input.toLowerCase() === 'y') {
             let playercard;
             let computerCard;
-            console.log("Let's start the game!");
-            for(round=1;round<=5;round++){
+            console.log("\n⚔️  Let's start the game!\n");
+            for(round=1;round<=cardRound;round++){
                 playercard=playerHand[round-1];
                 computerCard=computerHand[round-1];
                 if (getCardValue(playercard)>getCardValue(computerCard)){
-                    console.log(`Round ${round}: ${name} wins with ${playercard} against ${computerCard}`);
+                    console.log(`🏆 Round ${round}: ${name} wins with ${playercard} against ${computerCard}`);
                     playerScore++;
                 }
                 else{
-                    console.log(`Round ${round}: Computer wins with ${computerCard} against ${playercard}`);
+                    console.log(`💻 Round ${round}: Computer wins with ${computerCard} against ${playercard}`);
                     computerScore++;
                 }
             }
         } else {
-            console.log("Thanks for playing!");
+            console.log("🛑 Thanks for playing!");
             clearTimeout();
+        }
+        console.log(`\n📊 Here is the final Score: ${name} - ${playerScore}, Computer - ${computerScore}`)
+        if(playerScore>computerScore){
+            console.log(`🎉 ${name} wins the game! 👏`);
+            console.log("Thanks for playing! 🎮")
+        }
+        else if(playerScore<computerScore){
+            console.log("🤖 Computer wins the game!\n");
+            console.log("Thanks for playing! 🎮")
         }
     }, 3000);
 });

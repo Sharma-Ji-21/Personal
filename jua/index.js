@@ -11,7 +11,7 @@ setTimeout(() => {
     }
 
     let suits = ['♣️ Clubs', '♦️ Diamonds', '♠️ Spades', '♥️ Hearts'];
-    let ranks = ['🅰️', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟', '🃏J', '👸Q', '🤴K'];
+    let ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [];
 
     for (let suit of suits) {
@@ -41,16 +41,16 @@ setTimeout(() => {
     let getCardValue=(card)=>{
         let cardValue=card.split(" ")[0];
         let value;
-        if(cardValue==='🅰️'){
+        if(cardValue==='A'){
             value= 14;
         }
-        else if(cardValue==='🃏'){
+        else if(cardValue==='J'){
             value= 11;
         }
-        else if(cardValue==='👸'){
+        else if(cardValue==='Q'){
             value= 12;
         }
-        else if(cardValue==='🤴'){
+        else if(cardValue==='K'){
             value= 13;
         }
         else{

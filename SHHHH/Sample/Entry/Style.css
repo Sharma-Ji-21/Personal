@@ -1,0 +1,35 @@
+.ball {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 03);
+    transition: transform 0.3s;
+}
+body{
+    background-color: #596270;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display:flex;
+}
+.ball:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.ball1 {
+    background-color: #2B3A67;
+}
+
+.ball2 {
+    background-color: #17C3B2;
+}

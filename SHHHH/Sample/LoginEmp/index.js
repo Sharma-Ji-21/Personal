@@ -13,7 +13,6 @@ function textAni() {
         phaseIndex++; 
     }
     if (phaseIndex >= phases.length) {
-        // phaseIndex = 0;
     }
     setTimeout(textAni, 120);
 }

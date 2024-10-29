@@ -19,6 +19,23 @@ form {
     background-color: #fff;
     font-size: 1.2em;
 }
+.gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.gender label {
+    margin-right: 8px;
+    font-size: 1em;
+}
+
+.gender input {
+    margin-right: 5px;
+}
 
 input {
     width: 95%;
@@ -50,13 +67,8 @@ h1{
 }
 h2{
     text-align: center;
+    /* font-size: 2em; */
     color: #000;
-}
-.register{
-    text-align: center;
-    font-size: 1.1em;
-    color: #0a7268;
-    text-decoration: none;
 }
 
 .input-container {

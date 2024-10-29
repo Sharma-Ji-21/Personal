@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Login</title>
-<link rel="stylesheet" href="Style.css">
+    <title>Company Register</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1 class="welcome">Company Login</h1>
-    <h2>Login</h2>
+    <h1 class="welcome">Company Registration</h1>
+    <h2>Registration</h2>
     <form action="your-action-url" method="POST" onsubmit="return validateForm()">
         <div class="input-container">
             <i class="fa-solid fa-building"></i>
@@ -20,10 +20,13 @@
         </div>
         <div class="input-container">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" name="Password" placeholder="Enter Password" required>
+            <input type="password" id="Password" name="Password" placeholder="Enter Password" required>
         </div>
+        <div class="input-container">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required>
+        </div>        
         <button type="submit">Submit</button>
-        <h2>Don't have an account? <br><a class="register" href="Register Company/RegisterComp.html">Register</a></h2>
     </form>
     <script src="https://kit.fontawesome.com/582fbabb40.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>

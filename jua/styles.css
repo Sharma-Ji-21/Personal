@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1E2F;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #FFD700;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #FF4D4D;
+    font-weight: bold;
+}
+
+.setup {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #6A67CE;
+    background-color: #2B2A4E;
+    color: #FFD700;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #6A67CE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #FFAB00;
+}
+
+.game-container {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+
+.section {
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2B2A4E;
+    border: 3px solid #6A67CE;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.section h3 {
+    color: #FFAB00;
+    margin-bottom: 15px;
+}
+
+.section:hover {
+    background-color: #6A67CE;
+    border-color: #FFD700;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #4A4A7D;
+    color: #FFD700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+li:hover, li.selected {
+    background-color: #FFD700;
+    color: #2B2A4E;
+    font-weight: bold;
+}
+
+.results p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.results h3, .results h2 {
+    color: #FFD700;
+}
+
+.results p.win {
+    color: #00FF7F;
+}
+
+.results p.lose {
+    color: #FF4D4D;
+}
+.welcome-message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFD700;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}

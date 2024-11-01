@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #98b7b0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.company-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.Company1, .Company2, .Company3, .Company4, .Company5, .Company6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #a2e6d6;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.Company1:hover, .Company2:hover, .Company3:hover, .Company4:hover, .Company5:hover, .Company6:hover {
+    transform: scale(1.1);
+    margin-left: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.Company1 {
+    box-shadow: 0 0 14px rgb(57, 49, 213, 1);
+}
+
+.Company2 {
+    box-shadow: 0 0 14px rgb(159, 43, 43, 1);
+}
+
+.Company3 {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 1);
+}
+
+.Company4 {
+    box-shadow: 0 0 14px rgb(226, 0, 0, 1);
+}
+
+.Company5 {
+    box-shadow: 0 0 14px rgb(35, 91, 165, 1);
+}
+
+.Company6 {
+    box-shadow: 0 0 10px rgb(227, 181, 54, 1);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}

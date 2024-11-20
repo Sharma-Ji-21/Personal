@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    color: #ff5c8d; /* Bright pinkish color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #scrambledWord {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #17c3b2; /* Teal color */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  #inputBox {
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 2px solid #17c3b2; /* Teal color */
+    background-color: #282c34;
+    color: white;
+  }
+  
+  #inputBox:focus {
+    outline: none;
+    border-color: #ff5c8d; /* Pinkish border on focus */
+    background-color: #333;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 12px 20px;
+    background-color: #ff5c8d; /* Pink button */
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    
+    border: none;
+    transition: 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #ff79c6; /* Light pink */
+    transform: scale(1.1);
+  }
+  
+  #message {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff5c8d;
+    font-weight: bold;
+  }
+  
+  #score,
+  #timer {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #17c3b2;
+  }
+  
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #timer {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #timer {
+    animation: pulse 1s infinite;
+  }
+  

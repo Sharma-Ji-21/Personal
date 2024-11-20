@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Race</title>
+    <link rel="stylesheet" href="new.css"> 
+</head>
+<body>
+    <!-- Race Track -->
+    <div id="track">
+        <br>
+        <div id="horse1">
+            <div id="innerhorse1">
+                🐎
+            </div>
+        </div>
+        <br><br>
+        <div id="horse2">
+            <div id="innerhorse2">
+                🐎
+            </div>
+        </div>
+        <br><br>
+        <div id="horse3">
+            <div id="innerhorse3">
+                🐎
+            </div>
+        </div>
+        <br><br>
+        <div id="horse4">
+            <div id="innerhorse4">
+                🐎
+            </div>
+        </div>
+        <br><br>
+        <div id="horse5">
+            <div id="innerhorse5">
+                🐎
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Betting Area -->
+    <div id="bettingarea">
+        <div id="area1">
+            <label for="horse1-bet">Horse 1:</label>
+            <input type="number" id="horse1-bet" min="1" max="1000">
+        </div>
+        <div id="area2">
+            <label for="horse2-bet">Horse 2:</label>
+            <input type="number" id="horse2-bet" min="1" max="1000">
+        </div>
+        <div id="area3">
+            <label for="horse3-bet">Horse 3:</label>
+            <input type="number" id="horse3-bet" min="1" max="1000">
+        </div>
+        <div id="area4">
+            <label for="horse4-bet">Horse 4:</label>
+            <input type="number" id="horse4-bet" min="1" max="1000">
+        </div>
+        <div id="area5">
+            <label for="horse5-bet">Horse 5:</label>
+            <input type="number" id="horse5-bet" min="1" max="1000">
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Buttons -->
+    <div id="Buttons">
+        <button id="placeBetButton" class="custom-button">Place Your Bet</button>
+    </div>
+
+    <br><br>
+
+    <div id="StartRace">
+        <button id="startRaceButton" class="custom-button">Start Race</button>
+    </div>
+
+    <br><br><br>
+
+    <!-- Results -->
+     <h1>
+    <div id="Results"></div>
+    <br>
+    <br>
+    <div id="restart">
+        Restart
+    </div>
+</h1>
+    <script src="./new.js"></script>
+</body>
+</html>

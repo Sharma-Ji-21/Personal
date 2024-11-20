@@ -2,7 +2,7 @@ let playerName;
 let playerHand = [];
 let computerHand = [];
 let deck = [];
-const cardRound = 5;
+const cardRound = 7;
 let currentRound = 0;
 let playerScore = 0;
 let computerScore = 0;
@@ -24,7 +24,7 @@ function startGame() {
 
 function initializeDeck() {
     const suits = ['♣️ Clubs', '♦️ Diamonds', '♠️ Spades', '♥️ Hearts'];
-    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    const ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
     deck = [];
     for (let suit of suits) {
         for (let rank of ranks) {
@@ -93,7 +93,7 @@ function playRound(playerCardIndex) {
 function displayFinalScore() {
     const results = document.getElementById("results");
     results.innerHTML += `<h3>📊 Final Score: ${playerName} - ${playerScore}, Computer - ${computerScore}</h3>`;
-    if (playerScore > computerScore) {
+    if (playerScore >= computerScore) {
         results.innerHTML += `<h2>🎉 ${playerName} wins the game! 👏</h2><p>Thanks for playing! 🎮</p>`;
     } else {
         results.innerHTML += `<h2>🤖 Computer wins the game!</h2><p>Thanks for playing! 🎮</p>`;

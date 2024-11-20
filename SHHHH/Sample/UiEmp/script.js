@@ -1,6 +1,6 @@
 const paraEl = document.querySelector(".welcome");
 const phases = [
-    "Selete Company",
+    "Select Company",
 ];
 let phaseIndex = 0;
 let charIndex = 0;
@@ -12,8 +12,9 @@ function textAni() {
         charIndex = 0;
         phaseIndex++; 
     }
-    if (phaseIndex >= phases.length) {
-    }
+    // if (phaseIndex >= phases.length) {
+    //     // phaseIndex = 0;
+    // }
     setTimeout(textAni, 150);
 }
 document.addEventListener("DOMContentLoaded", textAni);

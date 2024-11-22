@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+button{
+    background-color: #f08804;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+
+a{
+    margin-right: 200px;
+}
+
+#footer{
+    background-color: #0f1111;
+    color: #f08804;
+    text-align: center;
+}
+#hehe, #hehe1, #hehe2{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+}
+#hehe{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#hehe1{
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#hehe2{
+    background-color: rgba(0, 0, 255, 0.5);
+}

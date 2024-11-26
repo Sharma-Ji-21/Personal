@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f1f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #0a7268;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #0a6158;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.job-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #6a8780;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h2 {
+    font-size: 1.2rem;
+    color: #0a6158;
+    margin-bottom: 0.5rem;
+}
+
+.job-card span {
+    color: #0a7268;
+    font-weight: bold;
+}
+
+.job-card p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.apply-btn {
+    display: block;
+    margin: 0px auto;
+    background: #0a7268;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #0a6158;
+}
+.apply-btn1 {
+    display: block;
+    margin: 0px auto;
+    background: #0a7268;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn1:hover {
+    background: #0a6158;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0a7268;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Application Form Styles */
+#applicationForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+#applicationForm h2 {
+    font-size: 1.5rem;
+    color: #0a7268;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#companyNameDisplay {
+    color: #0a6158;
+    font-weight: bold;
+}
+
+/* Form Labels and Inputs */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0a7268;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="file"] {
+    padding: 0.5rem;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background: #0a7268;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background: #0a6158;
+}
+
+form input[type="submit"]:active {
+    background: #085e4d;
+}

@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Login</title>
-<link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <h1 class="welcome">Employee Login</h1>
     <h2>Login</h2>
-    <form action="#" method="POST" onsubmit="return validateForm()">
+    <form id="loginForm" onsubmit="return validateForm()">
         <div class="input-container">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="Name" placeholder="Enter Name" required>
+            <input type="text" id="Name" placeholder="Enter Name" required>
         </div>
         <div class="input-container">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" name="Email" placeholder="Enter Email" required>
+            <input type="email" id="Email" placeholder="Enter Email" required>
         </div>
         <div class="input-container">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" name="Password" placeholder="Enter Password" required>
+            <input type="password" id="Password" placeholder="Enter Password" required>
         </div>
         <button type="submit">Submit</button>
         <h2>Don't have an account? <br><a class="register" href="Register Employee/RegisterEmp.html">Register</a></h2>
     </form>
+
     <script src="https://kit.fontawesome.com/582fbabb40.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Opportunities</h1>
+        <p class="welcome">Explore top positions and start your career journey!</p>
+    </header>
+
+    <main>
+        <div class="job-list">
+            <div class="job-card" data-company="Google">
+                <h2>Company Name: <span>Google</span></h2>
+                <p><strong>Position:</strong> Software Engineer Intern</p>
+                <p><strong>Requirements:</strong> JavaScript, React, Python</p>
+                <p><strong>Stipend Expected:</strong> ₹50,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Microsoft">
+                <h2>Company Name: <span>Microsoft</span></h2>
+                <p><strong>Position:</strong> Data Analyst Intern</p>
+                <p><strong>Requirements:</strong> SQL, PowerBI, Python</p>
+                <p><strong>Stipend Expected:</strong> ₹45,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Amazon">
+                <h2>Company Name: <span>Amazon</span></h2>
+                <p><strong>Position:</strong> Cloud Engineer Intern</p>
+                <p><strong>Requirements:</strong> AWS, Kubernetes, Linux</p>
+                <p><strong>Stipend Expected:</strong> ₹55,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Meta">
+                <h2>Company Name: <span>Meta</span></h2>
+                <p><strong>Position:</strong> Frontend Developer Intern</p>
+                <p><strong>Requirements:</strong> React, Tailwind CSS, JavaScript</p>
+                <p><strong>Stipend Expected:</strong> ₹60,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Tesla">
+                <h2>Company Name: <span>Tesla</span></h2>
+                <p><strong>Position:</strong> Embedded Systems Intern</p>
+                <p><strong>Requirements:</strong> C++, Microcontrollers, IoT</p>
+                <p><strong>Stipend Expected:</strong> ₹70,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Netflix">
+                <h2>Company Name: <span>Netflix</span></h2>
+                <p><strong>Position:</strong> Backend Developer Intern</p>
+                <p><strong>Requirements:</strong> Node.js, MongoDB, AWS</p>
+                <p><strong>Stipend Expected:</strong> ₹65,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="Apple">
+                <h2>Company Name: <span>Apple</span></h2>
+                <p><strong>Position:</strong> iOS Developer Intern</p>
+                <p><strong>Requirements:</strong> Swift, UIKit, Core Data</p>
+                <p><strong>Stipend Expected:</strong> ₹80,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card" data-company="IBM">
+                <h2>Company Name: <span>IBM</span></h2>
+                <p><strong>Position:</strong> AI Research Intern</p>
+                <p><strong>Requirements:</strong> Python, TensorFlow, NLP</p>
+                <p><strong>Stipend Expected:</strong> ₹55,000/month</p>
+                <br>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <div id="applicationForm" style="display: none;">
+            <h2>Intern Application - <span id="companyNameDisplay"></span></h2>
+            <form id="applicationDetailsForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+                <label for="skills">What Stack do you know?</label>
+                <textarea id="skills" name="skills" placeholder="List your skills..." required></textarea><br>
+
+                <label for="contribution">What can you do for us?</label>
+                <textarea id="contribution" name="contribution" placeholder="Describe your contribution..." required></textarea><br>
+
+                <button type="submit" class="apply-btn1">Submit Application</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Job Platform. All rights reserved <br>~Om Sharma.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
